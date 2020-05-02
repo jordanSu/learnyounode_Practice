@@ -1,5 +1,6 @@
-var http = require('http')
-http.get(process.argv[2], getResponse)
+const http = require('http');
+
+http.get(process.argv[2], getResponse);
 
 function getResponse(response) {
     response.setEncoding("utf8")
